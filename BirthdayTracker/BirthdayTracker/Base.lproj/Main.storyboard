@@ -46,7 +46,7 @@
         <!--День рождения-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AddBirthdayViewController" customModule="BirthdayTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,9 +96,22 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="День рождения" id="9Ar-QP-MxO">
-                        <barButtonItem key="leftBarButtonItem" title="Отменить" style="plain" id="XNc-nN-8nd"/>
-                        <barButtonItem key="rightBarButtonItem" title="Добавить" style="plain" id="3b9-WN-jmn"/>
+                        <barButtonItem key="leftBarButtonItem" title="Отменить" style="plain" id="XNc-nN-8nd">
+                            <connections>
+                                <action selector="cancelTabbed:" destination="BYZ-38-t0r" id="Wgz-iV-PkB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Добавить" style="plain" id="3b9-WN-jmn">
+                            <connections>
+                                <action selector="saveTapped:" destination="BYZ-38-t0r" id="ocl-zS-IPs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="birthdatePicker" destination="jIK-kE-6o8" id="LNa-Xp-x2L"/>
+                        <outlet property="firstNameTextField" destination="d7R-7w-xup" id="EBC-x8-rmn"/>
+                        <outlet property="lastNameTextField" destination="xpI-GM-hbP" id="Hw2-06-kgS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
