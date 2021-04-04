@@ -11,11 +11,10 @@
 		8B9DE5DF2617517A008B148C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DE5DE2617517A008B148C /* SceneDelegate.swift */; };
 		8B9DE5E12617517A008B148C /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DE5E02617517A008B148C /* AddBirthdayViewController.swift */; };
 		8B9DE5E42617517A008B148C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9DE5E22617517A008B148C /* Main.storyboard */; };
-		8B9DE5E72617517A008B148C /* BirthdayTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DE5E52617517A008B148C /* BirthdayTracker.xcdatamodeld */; };
 		8B9DE5E92617517B008B148C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9DE5E82617517B008B148C /* Assets.xcassets */; };
 		8B9DE5EC2617517B008B148C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9DE5EA2617517B008B148C /* LaunchScreen.storyboard */; };
-		8B9DE5F92618AC2E008B148C /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DE5F82618AC2E008B148C /* Birthday.swift */; };
 		8B9DE5FF2618B858008B148C /* BirthdaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DE5FE2618B858008B148C /* BirthdaysTableViewController.swift */; };
+		8B9DE60D2619EAD2008B148C /* BirthdayTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DE6052619E8E5008B148C /* BirthdayTracker.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +23,11 @@
 		8B9DE5DE2617517A008B148C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8B9DE5E02617517A008B148C /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
 		8B9DE5E32617517A008B148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8B9DE5E62617517A008B148C /* BirthdayTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayTracker.xcdatamodel; sourceTree = "<group>"; };
 		8B9DE5E82617517B008B148C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B9DE5EB2617517B008B148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B9DE5ED2617517B008B148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B9DE5F82618AC2E008B148C /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 		8B9DE5FE2618B858008B148C /* BirthdaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysTableViewController.swift; sourceTree = "<group>"; };
+		8B9DE6062619E8E5008B148C /* BirthdayTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayTracker.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +66,8 @@
 				8B9DE5E22617517A008B148C /* Main.storyboard */,
 				8B9DE5E82617517B008B148C /* Assets.xcassets */,
 				8B9DE5EA2617517B008B148C /* LaunchScreen.storyboard */,
+				8B9DE6052619E8E5008B148C /* BirthdayTracker.xcdatamodeld */,
 				8B9DE5ED2617517B008B148C /* Info.plist */,
-				8B9DE5E52617517A008B148C /* BirthdayTracker.xcdatamodeld */,
-				8B9DE5F82618AC2E008B148C /* Birthday.swift */,
 				8B9DE5FE2618B858008B148C /* BirthdaysTableViewController.swift */,
 			);
 			path = BirthdayTracker;
@@ -147,11 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B9DE5FF2618B858008B148C /* BirthdaysTableViewController.swift in Sources */,
-				8B9DE5F92618AC2E008B148C /* Birthday.swift in Sources */,
+				8B9DE60D2619EAD2008B148C /* BirthdayTracker.xcdatamodeld in Sources */,
 				8B9DE5E12617517A008B148C /* AddBirthdayViewController.swift in Sources */,
 				8B9DE5DD2617517A008B148C /* AppDelegate.swift in Sources */,
 				8B9DE5DF2617517A008B148C /* SceneDelegate.swift in Sources */,
-				8B9DE5E72617517A008B148C /* BirthdayTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,12 +351,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8B9DE5E52617517A008B148C /* BirthdayTracker.xcdatamodeld */ = {
+		8B9DE6052619E8E5008B148C /* BirthdayTracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8B9DE5E62617517A008B148C /* BirthdayTracker.xcdatamodel */,
+				8B9DE6062619E8E5008B148C /* BirthdayTracker.xcdatamodel */,
 			);
-			currentVersion = 8B9DE5E62617517A008B148C /* BirthdayTracker.xcdatamodel */;
+			currentVersion = 8B9DE6062619E8E5008B148C /* BirthdayTracker.xcdatamodel */;
 			path = BirthdayTracker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
