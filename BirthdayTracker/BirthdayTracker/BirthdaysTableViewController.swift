@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 class BirthdaysTableViewController: UITableViewController {
     
@@ -16,14 +17,14 @@ class BirthdaysTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         dateFormatter.dateStyle = .full
         dateFormatter.timeStyle = .none
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = Birthday.fetchRequest() as NSFetchRequest<Birthday>
@@ -80,6 +81,11 @@ class BirthdaysTableViewController: UITableViewController {
         
         if birthdays.count > indexPath.row {
             let birthday = birthdays[indexPath.row]
+            
+            if let identifier = birthday.birthdayId {
+                let center = UNUserNotificationCenter.current()
+                center.removePendingNotificationRequests(withIdentifiers: [identifier])
+            }
             
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
